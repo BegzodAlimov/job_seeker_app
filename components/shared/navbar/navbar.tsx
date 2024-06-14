@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -48,7 +47,7 @@ const navbarLinks = [
   {
     id: "2",
     title: "Clients",
-    link: "/",
+    link: "/clients",
   },
   {
     id: "3",
