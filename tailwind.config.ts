@@ -10,6 +10,31 @@ const config = {
 	],
   prefix: "",
   theme: {
+    colors: {
+      "primary": "#4864E1",
+      "secondary": "#021638",
+      "success": "#00c566",
+      "error": "#ff4747",
+      "warning": "#facc15",
+      "orange": "#ff7d57",
+      "line": "#e3e7ec",
+      "gray": "#f9f9fb",
+      "grayscale-10": "#f2f2f7",
+      "grayscale-20": "#d1d1d6",
+      "grayscale-30": "#c7c7cc",
+      "grayscale-40": "#aeaeb2",
+      "grayscale-50": "#8e8e93",
+      "grayscale-60": "#636366",
+      "grayscale-70": "#48484a",
+      "grayscale-80": "#3a3a3c",
+      "grayscale-90": "#2c2c2e",
+      "grayscale-100": "#1c1c1e",
+    },
+    fontFamily: {
+      "font-family": ["General Sans", "sans-serif"],
+      "second-family": ["Inter", "sans-serif"],
+      "third-family": ["Nunito Sans", "sans-serif"]
+    },
     container: {
       center: true,
       padding: "2rem",
