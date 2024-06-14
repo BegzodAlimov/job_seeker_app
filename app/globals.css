@@ -1,13 +1,13 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  @layer base {
+@layer base {
     :root {
-      --background: 0 0% 100%;
+      --background: 240, 20%, 98%, 1;
       --foreground: 0 0% 3.9%;
 
-      --card: 0 0% 100%;
+      --card: 229, 72%, 58%, 1;
       --card-foreground: 0 0% 3.9%;
 
       --popover: 0 0% 100%;
@@ -72,5 +72,8 @@
     }
     body {
       @apply bg-background text-foreground;
+    }
+    .container{
+      @apply min-h-screen
     }
   }
