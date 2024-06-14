@@ -20,7 +20,7 @@ export const Logo = () => {
           />
         </svg>
       </span>
-      <span className="font-semibold font-font-family text-xl tracking-[0.0em] text-secondary">
+      <span className="font-semibold font-font-family text-xl tracking-[0.0em] text-secondary1">
         Ngul!
       </span>
     </div>

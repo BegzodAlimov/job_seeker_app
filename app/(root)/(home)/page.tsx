@@ -30,7 +30,7 @@ export default function Home() {
                   value="job"
                   className={`rounded-tl-[24px] p-4 ${
                     selectedTab === "job"
-                      ? "border-b border-b-primary text-primary"
+                      ? "border-b border-b-primary1 text-primary1"
                       : ""
                   }`}
                   onClick={() => setSelectedTab("job")}
@@ -41,7 +41,7 @@ export default function Home() {
                   value="talent"
                   className={`rounded-tr-[24px] p-4 ${
                     selectedTab === "talent"
-                      ? "border-b border-b-primary text-primary"
+                      ? "border-b border-b-primary1 text-primary1"
                       : ""
                   }`}
                   onClick={() => setSelectedTab("talent")}
