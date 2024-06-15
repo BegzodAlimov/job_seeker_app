@@ -4,6 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
 import bannerImg from "../../../assets/home-banner.png";
 import Image from "next/image";
+import FindJob from "@/components/shared/find-job/find-job";
 
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState("job");
@@ -23,15 +24,13 @@ export default function Home() {
             </p>
             <Tabs
               defaultValue="job"
-              className="w-3/4 backdrop-blur-[20px] shadow-custom-shadow bg-gradient-to-tl from-opacity-0 to-gray-50"
+              className="w-3/4 backdrop-blur-[20px] shadow-custom-shadow bg-gradient-to-tl from-opacity-0 to-gray-50 mb-4 rounded-3xl overflow-hidden"
             >
               <TabsList className="transition mb-4">
                 <TabsTrigger
                   value="job"
-                  className={`rounded-tl-[24px] p-4 ${
-                    selectedTab === "job"
-                      ? "border-b border-b-primary1 text-primary1"
-                      : ""
+                  className={`rounded-tl-[24px] p-4  ${
+                    selectedTab === "job" ? "text-white bg-orange" : ""
                   }`}
                   onClick={() => setSelectedTab("job")}
                 >
@@ -40,9 +39,7 @@ export default function Home() {
                 <TabsTrigger
                   value="talent"
                   className={`rounded-tr-[24px] p-4 ${
-                    selectedTab === "talent"
-                      ? "border-b border-b-primary1 text-primary1"
-                      : ""
+                    selectedTab === "talent" ? "text-white bg-orange" : ""
                   }`}
                   onClick={() => setSelectedTab("talent")}
                 >
@@ -50,7 +47,7 @@ export default function Home() {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="job">
-                Make changes to your account here.
+                <FindJob/>
               </TabsContent>
               <TabsContent value="talent">
                 Change your password here.
