@@ -28,8 +28,8 @@ const Navbar = () => {
       </div>
       <div className="flex gap-x-8 justify-between w-64">
         {pathname === "/" ? <div className="flex gap-x-8 justify-between">
-          <Button className="bg-orange rounded-[32px] border border-white text-white hover:bg-white hover:text-primary">Log in</Button>
-          <Button className="bg-white rounded-[32px] border border-white text-primary  hover:bg-transparent hover:text-white">Sign Up</Button>
+          <Button className="bg-orange rounded-[32px] border border-white text-white hover:bg-white hover:text-primary1">Log in</Button>
+          <Button className="bg-white rounded-[32px] border border-white text-primary1  hover:bg-transparent hover:text-white">Sign Up</Button>
         </div> : "a"}
       </div>
     </div>
