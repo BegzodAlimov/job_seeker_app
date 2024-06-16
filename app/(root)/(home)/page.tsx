@@ -5,16 +5,19 @@ import { useState } from "react";
 import bannerImg from "../../../assets/home-banner.png";
 import Image from "next/image";
 import FindJob from "@/components/shared/find-job/find-job";
+import { usePathname } from "next/navigation";
+import { Airbnb, Google, Microsoft } from "@/components/ui/trusted";
 
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState("job");
+  const pathname = usePathname();
 
   return (
     <>
-      <header className="container relative">
+      <div className="relative">
+        {pathname === "/" ? <Navbar /> : null}
         <div className="relative z-30">
-          <Navbar />
-          <div className="pt-14">
+          <div className="pt-14 mb-14">
             <h1 className="max-w-[788px] mb-8 font-font-family font-medium text-7xl tracking-[0.01em]">
               Portal Job for Developer, Designer, and Marketers
             </h1>
@@ -47,20 +50,26 @@ export default function Home() {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="job">
-                <FindJob/>
+                <FindJob />
               </TabsContent>
               <TabsContent value="talent">
                 Change your password here.
               </TabsContent>
             </Tabs>
           </div>
+          <div>
+            <h3 className="font-medium text-[18px] tracking-[0.01em] text-[#a2a1a7] mb-6 font-font-family">Trusted by:</h3>
+            <div className="flex gap-x-6 items-center">
+              <Google/>
+              <Microsoft/>
+              <Airbnb/>
+            </div>
+          </div>
         </div>
         <div className="absolute top-0 right-0">
           <Image src={bannerImg} alt="banner img" />
         </div>
-      </header>
-      <main></main>
-      <footer></footer>
+      </div>
     </>
   );
 }
