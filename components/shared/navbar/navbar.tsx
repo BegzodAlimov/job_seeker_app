@@ -8,7 +8,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center justify-between py-7">
+    <div className="flex items-center justify-between py-7 relative z-40">
       <div className="flex items-center gap-20">
         <Logo />
         <ul className="flex gap-x-14">
@@ -26,11 +26,27 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div className="flex gap-x-8 justify-between w-64">
-        {pathname === "/" ? <div className="flex gap-x-8 justify-between">
-          <Button className="bg-orange rounded-[32px] border border-white text-white hover:bg-white hover:text-primary1">Log in</Button>
-          <Button className="bg-white rounded-[32px] border border-white text-primary1  hover:bg-transparent hover:text-white">Sign Up</Button>
-        </div> : "a"}
+      <div className={"flex gap-x-8 justify-between"}>
+        <div className="flex gap-x-8 justify-between">
+          <Button
+            className={`rounded-[32px] border w-[110px] ${
+              pathname === "/"
+                ? "bg-orange border-white text-white hover:bg-white hover:text-primary-10"
+                : "bg-white border-primary-10 text-primary-10 hover:bg-primary-10 hover:text-white"
+            }`}
+          >
+            Log in
+          </Button>
+          <Button
+            className={`rounded-[32px] border w-[110px] ${
+              pathname === "/"
+                ? "bg-white border-white text-primary-10  hover:bg-orange hover:text-white mr-10"
+                : "bg-primary-10 border-primary-10 text-white  hover:bg-white hover:text-primary-10"
+            }`}
+          >
+            Sign Up
+          </Button>
+        </div>
       </div>
     </div>
   );

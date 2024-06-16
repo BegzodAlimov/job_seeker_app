@@ -61,7 +61,8 @@ const config = {
         //   foreground: "hsl(var(--card-foreground))",
         // },
 
-      primary: "#4864E1",
+      "primary-10": "#4864E1",
+      "bg-input": "rgba(255, 255, 255, 0.12)",
       secondary: "#021638",
       success: "#00c566",
       error: "#ff4747",
