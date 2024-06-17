@@ -17,7 +17,7 @@ const Banner = () => {
               </div>
           </div>
           <div className='md:w-1/2 max-md:h-80 relative'>
-              <Image src={Client} alt='' fill priority className='object-cover md:rounded-3xl rounded-2xl'/>
+              <Image src={Client} alt='img' fill priority className='object-cover md:rounded-3xl rounded-2xl'/>
           </div>
     </div>
   )
