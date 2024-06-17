@@ -38,14 +38,14 @@ const font = localFont({
 export default function Layout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   return (
-    <>
+    <div className="bg-[#f9f9f9]">
       <header className="container">
         {pathname !== "/" ? <Navbar /> : null}
       </header>
-      <main className={`container max-lg:px-5 bg-background ${font.className}`}>
+      <main className={`container max-lg:px-5 ${font.className}`}>
         {children}
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
