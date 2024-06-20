@@ -68,16 +68,16 @@ const navbarLinks = [
   {
     id: "3",
     title: "Community",
-    link: "/",
+    link: "/comunity",
   },
   {
     id: "4",
     title: "Blog",
-    link: "/",
+    link: "/blog",
   },
   {
     id: "5",
     title: "About Us",
-    link: "/",
+    link: "/about",
   },
 ];
