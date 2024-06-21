@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
               <div className="flex gap-x-10">
                 <Link
-                  href={"/"}
+                  href={"/faq"}
                   className="font-font-family font-medium text-[16px] text-[#c5c5c5] hover:opacity-50"
                 >
                   FAQ
