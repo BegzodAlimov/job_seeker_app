@@ -23,7 +23,9 @@ const Faq = () => {
 
   return (
     <div className="w-2/3 mx-auto pt-20 pb-[144px]">
-      {faq ? <Accordion type="single" collapsible>
+      {faq ? <>
+        <h2 className="max-w-[506px] font-font-family font-medium text-2xl text-[#09080d] tracking-[0.01em] mb-6">Maybe your question is have been answered, check this out!</h2>
+        <Accordion type="single" collapsible>
         {faq?.map((item: IFaqItem) => (
             <AccordionItem value={`item-${item.id}`} className="border-0">
             <AccordionTrigger className="font-font-family font-medium text-xl tracking-[0.01em] text-[#09080d] hover:no-underline">
@@ -34,7 +36,8 @@ const Faq = () => {
             </AccordionContent>
           </AccordionItem>
         ))}
-      </Accordion>: "not data"}
+      </Accordion>
+      </>: "not data"}
     </div>
   );
 };
