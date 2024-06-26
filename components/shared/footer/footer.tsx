@@ -39,7 +39,7 @@ const Footer = () => {
                   Find Talent
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/clients"}
                   className="font-font-family font-medium text-[16px] text-[#c5c5c5] hover:opacity-50"
                 >
                   Clients
@@ -59,7 +59,7 @@ const Footer = () => {
                   FAQ
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/about"}
                   className="font-font-family font-medium text-[16px] text-[#c5c5c5] hover:opacity-50"
                 >
                   About Us
