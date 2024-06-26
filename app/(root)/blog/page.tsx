@@ -1,7 +1,10 @@
+import BlogBanner from "@/components/shared/blog-banner"
 
 const Blog = () => {
   return (
-    <div>page</div>
+    <div className="min-h-screen">
+      <BlogBanner/>
+    </div>
   )
 }
 

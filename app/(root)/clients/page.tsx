@@ -5,7 +5,7 @@ import React from 'react'
 
 function Clients() {
     return (
-        <div className='my-20'>
+        <div className='my-5'>
             <Banner />
             <Comment />
             <Statistics/>
