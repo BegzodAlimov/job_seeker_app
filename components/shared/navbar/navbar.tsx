@@ -10,7 +10,9 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-7 relative z-40">
       <div className="flex items-center gap-20">
-        <Logo />
+        <Link href={"/"}>
+          <Logo />
+        </Link>
         <ul className="flex gap-x-14">
           {navbarLinks.map((link) => (
             <li key={link.id}>
