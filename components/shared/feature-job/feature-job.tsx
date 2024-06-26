@@ -4,6 +4,7 @@ import Title from '@/components/ui/title'
 import developerIcon from "@/public/icons/developer.svg";
 import designerIcon from "@/public/icons/designer.svg";
 import markekerIcon from "@/public/icons/marketer.svg";
+import Image from 'next/image';
 
 const FeatureJob = () => {
   return (
@@ -16,7 +17,7 @@ const FeatureJob = () => {
             <div className="rounded-[32px] overflow-hidden flex max-w-[1086px]">
               <Card className="py-8 px-10 bg-white border-0">
                 <CardHeader className="mb-6">
-                  <img src={developerIcon} alt="card icon" />
+                  <Image src={developerIcon} alt="card icon" />
                   <h3 className="font-font-family font-medium text-2xl text-primary-10">
                     Developer
                   </h3>
@@ -43,7 +44,7 @@ const FeatureJob = () => {
 
               <Card className="py-8 px-10 bg-primary-10 border-0">
                 <CardHeader className="mb-6">
-                  <img src={designerIcon} alt="card icon" />
+                  <Image src={designerIcon} alt="card icon" />
                   <h3 className="font-font-family font-medium text-2xl text-white">
                     Designer
                   </h3>
@@ -70,7 +71,7 @@ const FeatureJob = () => {
 
               <Card className="py-8 px-10 bg-white border-0">
                 <CardHeader className="mb-6">
-                  <img src={markekerIcon} alt="card icon" />
+                  <Image src={markekerIcon} alt="card icon" />
                   <h3 className="font-font-family font-medium text-2xl text-primary-10">
                     Marketers
                   </h3>

@@ -1,12 +1,12 @@
-import BlogBanner from "@/components/shared/blog-banner/page";
+import BlogBanner from "@/components/shared/blog-banner";
 
 const Blog = () => {
 
   return (
-    <div>
+    <div className="pt-[120px]">
       <BlogBanner/>
     </div>
-  );
-};
+  )
+}
 
 export default Blog;
