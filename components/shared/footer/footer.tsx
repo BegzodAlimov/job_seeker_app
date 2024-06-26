@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
               <div className="flex gap-x-10">
                 <Link
-                  href={"/"}
+                  href={"/faq"}
                   className="font-font-family font-medium text-[16px] text-[#c5c5c5] hover:opacity-50"
                 >
                   FAQ
@@ -110,12 +110,12 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex gap-x-10">
-              <div className="font-font-family font-medium text-[16px] text-[#c5c5c5] tracking-[0.01em]">
+              <Link href={"/privacy_policy"} className="font-font-family font-medium text-[16px] text-[#c5c5c5] tracking-[0.01em]">
                 Terms of Service
-              </div>
-              <div className="font-font-family font-medium text-[16px] text-[#c5c5c5] tracking-[0.01em]">
+              </Link>
+              <Link href={"/terms_of_service"} className="font-font-family font-medium text-[16px] text-[#c5c5c5] tracking-[0.01em]">
                 Privacy Policy
-              </div>
+              </Link>
             </div>
           </div>
         </div>
