@@ -59,10 +59,10 @@ const Footer = () => {
                   FAQ
                 </Link>
                 <Link
-                  href={"/about"}
+                  href={"/support"}
                   className="font-font-family font-medium text-[16px] text-[#c5c5c5] hover:opacity-50"
                 >
-                  About Us
+                  Support
                 </Link>
               </div>
             </div>
